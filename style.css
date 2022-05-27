@@ -1,0 +1,54 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #36d8b7;
+  font-family: sans-serif;
+}
+
+.posts {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+.posts h1 {
+  margin: 25px 10px 15px;
+}
+
+.post {
+  width: 46%;
+  background: #f1f1f1;
+  overflow: hidden;
+  margin: 20px 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+  float: left;
+}
+
+.post img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.post h2 {
+  padding: 10px;
+}
+
+.post p {
+  margin-bottom: 10px;
+  text-align: justify;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 678px) {
+  .post {
+    width: 96%;
+    margin: 2%;
+  }
+}
